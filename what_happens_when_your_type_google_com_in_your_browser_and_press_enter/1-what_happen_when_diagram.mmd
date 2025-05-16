@@ -1,0 +1,11 @@
+graph TD
+    A[Users] --> B[DNS Lookup]
+    B -->
+    A --> C[TCP/IP Handshake]
+    C --> D[Firewall]
+    D --> E[HTTPS and SSL/TLS Handshake]
+    E --> F[Load Balancer]
+    F --> G[Web Server]
+    G --> A
+    G <--> H[Application Server]
+    H <--> I[Database]
